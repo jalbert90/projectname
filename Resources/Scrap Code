@@ -1,0 +1,23 @@
+			/* Replace with setData_set() method
+			System.out.println("Key in the " + numberDataElement + " data elements: ");
+			for(int i=0; i<numberDataElement; i++) {
+				System.out.print("index #" + i + ": ");
+				dataElement[i] = scan.nextDouble();
+				System.out.println();
+			}*/
+			
+			
+		/* Replace with the getData_Set() method...?
+		System.out.println("Data_Set: ");
+		for (int i=0; i<numberDataElement; i++) {
+		System.out.print(" " + dataElement[i] + " ");
+		}*/
+		
+		
+		/*
+		for(int i=0; i<n; i++) {
+			data[i] = scan.nextDouble();
+			data[i] = n-i;
+			System.out.println(data[i]);
+		}
+		*/
