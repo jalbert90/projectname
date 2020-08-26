@@ -8,8 +8,8 @@ import java.util.Scanner;
  * @version 1.0
  */
 public class Data_Set { /*Attributes*/
-	protected int dataLength = 0;
-	protected double[] data = new double[dataLength];
+	protected int dataLength;
+	protected double[] data;
 	protected boolean explicitEntry = false;
 	private Scanner scan = new Scanner(System.in);
 	
@@ -18,6 +18,7 @@ public class Data_Set { /*Attributes*/
 	 */
 	public Data_Set() { //Rewrite as this(1, false) ??
 		this.dataLength = 1;
+		data = new double[this.dataLength];
 		for (int i=0; i<this.dataLength; i++) {
 			this.data[i] = 0;
 			System.out.println(this.data[i]);
