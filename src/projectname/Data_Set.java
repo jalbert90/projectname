@@ -18,7 +18,7 @@ public class Data_Set { /*Attributes*/
 	 */
 	public Data_Set() { //Rewrite as this(1, false) ??
 		this.dataLength = 1;
-		data = new double[this.dataLength];
+		this.data = new double[this.dataLength];
 		for (int i=0; i<this.dataLength; i++) {
 			this.data[i] = 0;
 			System.out.println(this.data[i]);
@@ -34,6 +34,7 @@ public class Data_Set { /*Attributes*/
 	public Data_Set(int dataLength, boolean explicitEntry) {
 		this.explicitEntry = explicitEntry;
 		this.dataLength = dataLength;
+		this.data = new double[this.dataLength];
 		
 		if (explicitEntry) {
 			setData_Set();
@@ -53,8 +54,9 @@ public class Data_Set { /*Attributes*/
 	 * @param data 1D array passed to constructor by reference
 	 */
 	public Data_Set(double[] data) {
-		this.data = data;
 		this.dataLength = data.length;
+		this.data = new double[this.dataLength];
+		this.data = data;
 	}
 	
 	/*Actions*/
@@ -98,7 +100,7 @@ public class Data_Set { /*Attributes*/
 		System.out.println();
 		System.out.println("Data_Set: ");
 		for (int i=0; i<this.dataLength; i++) {
-		System.out.print(" " + this.data[i] + " ");
+		System.out.println(this.data[i]);
 		}
 		
 	}
@@ -111,7 +113,7 @@ public class Data_Set { /*Attributes*/
 		for(int i=0; i<this.dataLength; i++) {
 			System.out.print("index #" + i + ": ");
 			this.data[i] = scan.nextDouble();
-			System.out.println();
+			//System.out.println();
 		}
 	}
 	
